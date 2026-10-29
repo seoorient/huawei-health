@@ -1,6 +1,79 @@
-<!doctype html><html lang="en"><head><meta charset="utf-8"><meta name="viewport" content="width=device-width,initial-scale=1"><title>Personal Health Tracker</title></head>
-<body style="font-family:sans-serif;max-width:640px;margin:2em auto;padding:0 1em">
-<h1>Personal Health Tracker</h1>
-<p>Personal fitness diary for Android (com.alexey.healthtracker). Developer: Kudrautsau Aliaksei, Minsk, Belarus. Contact: <a href="mailto:seoorient@gmail.com">seoorient@gmail.com</a></p>
-<ul><li><a href="privacy-policy.html">Privacy Policy</a></li><li><a href="user-agreement.html">User Agreement</a></li></ul>
+<!doctype html><html lang="en"><head><meta charset="utf-8"><meta name="viewport" content="width=device-width,initial-scale=1"><title>Privacy Policy — Personal Health Tracker</title>
+<style>body{font-family:-apple-system,Segoe UI,Roboto,Arial,sans-serif;max-width:820px;margin:2rem auto;padding:0 1rem;line-height:1.55;color:#222}table{border-collapse:collapse;width:100%;font-size:.95em}td,th{border:1px solid #ccc;padding:.4rem;vertical-align:top}th{background:#f4f4f4}code{background:#f4f4f4;padding:0 .2em}</style></head><body>
+<h1>Privacy Policy — Personal Health Tracker</h1>
+<p><strong>App name:</strong> Personal Health Tracker (Android, package <code>com.alexey.healthtracker</code>, AppGallery App ID 119572481)
+<strong>Developer and data controller:</strong> Kudrautsau Aliaksei (Кудравцов Алексей), individual developer, Minsk, Belarus. HUAWEI Developers ID 30375000023053592.
+<strong>Contact:</strong> seoorient@gmail.com
+<strong>Effective date:</strong> 29 October 2026 · <strong>Last updated:</strong> 29 October 2026</p>
+<p>"Personal Health Tracker" in this policy, in the app, and on AppGallery is the same app, published by the individual developer Kudrautsau Aliaksei under the HUAWEI Developers account above. There is no company behind the app.</p>
+<h2>1. What the app does</h2>
+<p>Personal Health Tracker is a personal activity diary. You can add your own notes and workouts by hand. With your permission it also reads your daily activity and workout data from HUAWEI Health through HUAWEI Health Kit (Health Service Kit). It shows the data in the app and lets you export it to a file in a storage location you choose. The app is <strong>read-only</strong>: it never writes, changes, or deletes data in HUAWEI Health. It does not provide medical diagnosis, treatment, or medical advice and is not a medical device.</p>
+<h2>2. Data we read from HUAWEI Health (only with your authorization)</h2>
+<table>
+<thead>
+<tr>
+<th>Data type (HUAWEI Health Kit)</th>
+<th>Scope</th>
+<th>What the app uses it for</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>Step count (sampling details and daily totals)</td>
+<td><code>https://www.huawei.com/healthkit/step.read</code></td>
+<td>Show your daily step count in the diary; include it in your export file.</td>
+</tr>
+<tr>
+<td>Exercise record summary (workout type, start and end time, duration, distance, calories)</td>
+<td><code>https://www.huawei.com/healthkit/activityrecord.read</code></td>
+<td>List your workouts under each day; include them in your export file.</td>
+</tr>
+<tr>
+<td>Exercise record details (data recorded during a workout, such as speed, cadence, and workout heart rate)</td>
+<td><code>https://www.huawei.com/healthkit/activity.read</code></td>
+<td>Show the details of a workout when you open it; include them in your export file.</td>
+</tr>
+</tbody>
+</table>
+<p>The app reads only data generated after you authorize it. It does not request historical data from before the authorization.</p>
+<p>The app does <strong>not</strong> read all-day or resting heart rate, sleep, stress, SpO2, body temperature, blood pressure, blood glucose, ECG, height, weight or body fat, reproductive data, or location/route data.</p>
+<p>We also receive from HUAWEI ID, when you sign in: an OpenID identifier and an access token. We use them only to call HUAWEI Health Kit on your behalf. We do not request your phone number, email, or contacts.</p>
+<h2>3. How the data is processed and stored</h2>
+<ul>
+<li>Data is read from HUAWEI Health Kit only when you open the app or tap <strong>Sync</strong>. There is no background collection.</li>
+<li>Notes and workouts you enter by hand, and data read from HUAWEI Health, are stored <strong>only on your phone</strong>, in the app's private storage, encrypted by the Android system.</li>
+<li><strong>Export:</strong> when you tap <strong>Export</strong>, the app writes a JSON/CSV file to a folder you pick with the Android file picker (for example a folder on the phone or a cloud folder of your own). The file goes only where you choose. The developer does not receive it.</li>
+<li>The app has <strong>no server</strong>. The developer does not collect, receive, or store your health or activity data, and does not use analytics, advertising, or tracking SDKs.</li>
+<li>We do <strong>not</strong> sell, rent, or share your data with anyone, and we do not use it for advertising, profiling, credit, insurance, or employment decisions.</li>
+</ul>
+<h2>4. Cross-border transfer</h2>
+<p>The developer does not operate a server for this app and does not transfer HUAWEI Health data to any third party or to any other country. Authorized data is read on your phone and stored on that phone. HUAWEI Health data held by Huawei is handled under Huawei's privacy statement and your HUAWEI ID settings. If you yourself export data to storage you control (for example your own cloud folder), you choose that destination; the developer does not operate it and does not receive the file.</p>
+<h2>5. Permissions used by the app and by HUAWEI Health Core</h2>
+<ul>
+<li><strong>Internet:</strong> to sign in with HUAWEI ID and to read data from HUAWEI Health Kit.</li>
+<li>The app requests no location, Bluetooth, camera, microphone, contacts, or storage permission. Export uses the Android file picker, which needs no storage permission.</li>
+<li>HUAWEI Health Core (part of HMS Core on your phone) may use network access to sync data between Health Core and the HUAWEI Health Kit cloud. Location and Bluetooth permissions of Health Core are not used by this app.</li>
+</ul>
+<h2>6. Your choices and control</h2>
+<ul>
+<li><strong>Grant:</strong> on first sign-in, HUAWEI ID shows a screen with each data type. You can allow all or only some of them. The app works with whatever you allow.</li>
+<li><strong>Change or revoke at any time:</strong></li>
+<li>in the app: <strong>Settings → Data access → Revoke HUAWEI Health access</strong> (this cancels the authorization through HUAWEI Health Kit, signs you out, and deletes the data the app read from HUAWEI Health);</li>
+<li>in HUAWEI Health: <strong>Me → Privacy management → HUAWEI Health Kit</strong> (Android), then find Personal Health Tracker and turn off access;</li>
+<li>in your HUAWEI ID settings, in the list of apps that use your HUAWEI ID: remove Personal Health Tracker.
+  After you revoke access, the app cannot read any more data from HUAWEI Health.</li>
+<li><strong>Delete:</strong> <strong>Settings → Delete all local data</strong> removes everything the app stored. Uninstalling the app also deletes all its data. Files you exported stay where you saved them, under your control.</li>
+</ul>
+<h2>7. Retention</h2>
+<p>Local data stays on your phone until you delete it, revoke access, or uninstall the app. The developer keeps no copy.</p>
+<h2>8. Security</h2>
+<p>Access tokens are stored in Android Keystore-backed encrypted storage. All communication with HUAWEI services uses HTTPS. The app is not backed up through Android cloud backup.</p>
+<h2>9. Children</h2>
+<p>The app is not directed at children under 14 and does not knowingly process their data.</p>
+<h2>10. Your rights</h2>
+<p>You can ask what data the app holds about you, and ask for it to be corrected or deleted. Because all data stays on your device, you can do this yourself in the app (export or delete). For any question, write to seoorient@gmail.com. We answer within 30 days. You may also contact the data protection authority of your country (in Belarus: the National Personal Data Protection Center).</p>
+<h2>11. Changes</h2>
+<p>If this policy changes, we will update the date above and show the new version in the app before the change applies. If a change adds a new data type, the app will ask for your authorization again.</p>
+<h2>12. HUAWEI Health</h2>
+<p>HUAWEI Health data is provided by Huawei through HUAWEI Health Kit. HUAWEI and HUAWEI Health are trademarks of Huawei Technologies Co., Ltd. This app is not made or endorsed by Huawei.</p>
 </body></html>
